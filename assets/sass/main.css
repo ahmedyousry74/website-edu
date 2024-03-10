@@ -714,7 +714,7 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 }
 
 .parteners {
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 .parteners .owl-stage {
   display: flex;
@@ -940,7 +940,7 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 }
 
 .contact {
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
