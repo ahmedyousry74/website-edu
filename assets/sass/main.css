@@ -229,7 +229,7 @@ input[type=checkbox]:checked {
   position: relative;
   font-size: 30px;
   font-weight: 600;
-  color: #050505;
+  color: #008F2C;
   margin-bottom: 35px;
 }
 
@@ -442,7 +442,7 @@ header {
 }
 header:after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   right: 0;
@@ -704,6 +704,8 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   color: #050505;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
+  display: block;
 }
 .services .services-item:hover .services-img:after {
   opacity: 0.7;
@@ -732,7 +734,8 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 }
 
 .become {
-  height: 400px;
+  margin: 50px 0 0 0;
+  padding: 50px 30px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -759,15 +762,17 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 }
 .become .become_info h3 {
   color: #fff;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
   margin: 0;
 }
 .become .become_info p {
   color: #fff;
-  font-size: 55px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
   margin: 0;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .become .become_info p {
