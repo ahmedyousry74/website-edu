@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './core/_base.scss';
+@import './components/_navbar.scss';
+@import './components/_footer.scss';
+@import './components/_header.scss';
+@import './components/_how.scss';
+@import './components/_services.scss';
+@import './components/_parteners.scss';
+@import './components/_become.scss';
+@import './components/_offers.scss';
+@import './components/_new.scss';
+@import './components/_testimonials.scss';
+@import './components/_contact.scss';
+@import './components/_number_services.scss';
+@import './themes/_color.scss';

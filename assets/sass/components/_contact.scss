@@ -1,0 +1,152 @@
+.contact{
+    margin: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    position: relative;
+    &:after{
+        content: "";
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .contact_right{
+        z-index: 99999;
+        padding: 150px 0 0;
+        position: relative;
+        h2{
+            color: #fff;
+            font-size: 45px;
+            font-weight: 600px;
+            margin-bottom: 35px;
+            span{
+                color: $third-color;
+                font-weight: 800;
+            }
+        }
+        h3{
+            color: #fff;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .contact__form{
+        z-index: 999999999;
+        position: relative;
+        background-color: #fff;
+        top: 77px;
+        .contact_header{
+            background-color: $second-color;
+            padding: 8px 15px;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4{
+                color: #fff;
+                margin-top: 52px;
+                font-size: 20px;
+            }
+            .custom-shape-divider-top-1710088665 svg {
+                height: 62px;
+            }
+        }
+        form{
+            padding: 25px 15px;
+            input{
+                height: 38px;
+                border-radius: 4px;
+            }
+            .btn_form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 35px;
+                button{
+                    background-color: transparent;
+                    color: $primary-color;
+                    border: 1px solid $fourth-color;
+                    padding: 10px 25px;
+                    transition: 0.3s all ease-in-out;
+                    border-radius: 6px;
+                    &:hover{
+                        background-color: $third-color;
+                        color: #fff;
+                        border-color: $third-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 991px){
+        padding: 20px 0;
+        height: 100%;
+        .custom-shape-divider,.custom-shape-divider-two{
+            display: none !important;
+        }
+        .contact_right{
+            padding: 50px 0 0;
+            h2{
+                font-size: 25px;
+                margin-bottom: 20px;
+                span{
+                    color: $third-color;
+                    font-weight: 800;
+                }
+            }
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .contact__form{
+            top: 0px;
+        }
+        .contact_header{
+            padding: 5px;
+            height: auto;
+            h4{
+                margin-top: 0 !important;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.custom-shape-divider{
+    z-index: 99999;
+}
+.custom-shape-divider-top-1710088665 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1710088665 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1710088665 .shape-fill {
+    fill: #F9FAFB;
+}

@@ -1,0 +1,76 @@
+.how__to__work {
+    padding: 10px 0;
+
+    .how__works__items {
+        border-bottom: 1px solid #ebebeb;
+        .how__work__item {
+            border-inline-end: 1px solid #ebebeb;
+            padding-right: 15px;
+            transition: 0.3s ease-in-out all;
+            padding: 40px;
+            &:last-child {
+                border: 0;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
+            h6{
+                color: $primary-color;
+                font-size: 600;
+                font-size: 18px;
+            }
+            p{
+                color: $fifth-color;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            a {
+                position: relative;
+                padding-right: 10px;
+                font-size: 13px;
+                font-weight: 700;
+                color: #19c880;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0;
+                svg{
+                    position: absolute;
+                    top: 2px;
+                    right: -30px;
+                    width: 100%;
+                    height: 100%;
+                    background: $sixth-color;
+                    transition: all .35s;
+                }
+                span{
+                    opacity: 0;
+                }
+            }
+            
+            &:hover{
+                a{
+                    svg{
+                        right: 100%;
+                        color: $second-color;
+                        right: 80px;
+                        width: 20px;
+                    }
+                    span{
+                        opacity: 1 !important;
+                    }
+                }
+            }
+        }
+        @media(max-width: 991px){
+            flex-wrap: wrap;
+            .how__work__item {
+                border: 0;
+                padding: 15px;
+                border-bottom: 1px solid #ebebeb;
+                width: 100%;
+            }
+        }
+    }
+}

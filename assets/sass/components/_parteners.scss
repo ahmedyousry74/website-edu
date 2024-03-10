@@ -1,0 +1,16 @@
+.parteners{
+    padding: 50px 0;
+    .owl-stage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    img{
+        width: 100px !important;
+        object-fit: cover;
+    }
+    .owl-nav{
+        display: none;
+    }
+}
