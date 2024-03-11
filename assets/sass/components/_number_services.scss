@@ -37,6 +37,17 @@
             p{
                 color: $third-color;
                 font-weight: 800;
+                border: 2px solid #a7a7a7;
+                padding: 10px;
+                border-radius: 50%;
+                padding: 10px 12px 12px 10px;
+                text-align: center;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
             }
         }
     }

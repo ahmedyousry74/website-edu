@@ -964,7 +964,7 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 }
 .contact .contact_right {
   z-index: 99999;
-  padding: 150px 0 0;
+  padding: 120px 0 0;
   position: relative;
 }
 .contact .contact_right h2 {
@@ -986,6 +986,17 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+  border: 2px solid #a7a7a7;
+  padding: 10px;
+  border-radius: 50%;
+  padding: 10px 12px 12px 10px;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .contact .contact__form {
   z-index: 999999999;
@@ -1149,4 +1160,15 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
 .number__services .number__services__items .number-services-item p {
   color: #B9915E;
   font-weight: 800;
+  border: 2px solid #a7a7a7;
+  padding: 10px;
+  border-radius: 50%;
+  padding: 10px 12px 12px 10px;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */

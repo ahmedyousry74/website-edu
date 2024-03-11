@@ -17,7 +17,7 @@
     }
     .contact_right{
         z-index: 99999;
-        padding: 150px 0 0;
+        padding: 120px 0 0;
         position: relative;
         h2{
             color: #fff;
@@ -38,6 +38,17 @@
             color: #fff;
             font-size: 20px;
             font-weight: 500;
+            border: 2px solid #a7a7a7;
+            padding: 10px;
+            border-radius: 50%;
+            padding: 10px 12px 12px 10px;
+            text-align: center;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
         }
     }
     .contact__form{
