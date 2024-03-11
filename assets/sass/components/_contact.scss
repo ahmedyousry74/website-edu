@@ -46,6 +46,9 @@
         background-color: #fff;
         top: 101px;
         width: 390px;
+        @media(max-width: 580px){
+            width: 100%;
+        }
         .contact_header{
             background-color: $second-color;
             padding: 8px 15px;

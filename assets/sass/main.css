@@ -994,6 +994,11 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   top: 101px;
   width: 390px;
 }
+@media (max-width: 580px) {
+  .contact .contact__form {
+    width: 100%;
+  }
+}
 .contact .contact__form .contact_header {
   background-color: #008F2C;
   padding: 8px 15px;
