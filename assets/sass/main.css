@@ -991,7 +991,8 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   z-index: 999999999;
   position: relative;
   background-color: #fff;
-  top: 77px;
+  top: 101px;
+  width: 390px;
 }
 .contact .contact__form .contact_header {
   background-color: #008F2C;
@@ -1008,7 +1009,7 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   font-size: 20px;
 }
 .contact .contact__form .contact_header .custom-shape-divider-top-1710088665 svg {
-  height: 62px;
+  height: 39px;
 }
 .contact .contact__form form {
   padding: 25px 15px;
