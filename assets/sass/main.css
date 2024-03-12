@@ -1158,17 +1158,18 @@ header .carousel-item .header_title button:hover, header .carousel-item .header_
   font-size: 22px;
 }
 .number__services .number__services__items .number-services-item p {
-  color: #B9915E;
+  color: #008F2C;
   font-weight: 800;
   border: 2px solid #a7a7a7;
   padding: 10px;
   border-radius: 50%;
   padding: 10px 12px 12px 10px;
   text-align: center;
-  width: 70px;
-  height: 70px;
+  width: 130px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 45px;
 }/*# sourceMappingURL=main.css.map */
