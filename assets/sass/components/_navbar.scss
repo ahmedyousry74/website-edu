@@ -100,4 +100,11 @@ nav{
             }
         }
     }
+    &.inside__pages{
+        position: relative !important;
+        background-color: #000 !important;
+        .offcanvas.offcanvas-start-lg{
+            border-bottom: 0 !important;
+        }
+    }
 }

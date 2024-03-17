@@ -241,6 +241,81 @@ input[type=checkbox]:checked {
   color: #008F2C;
 }
 
+.contact__us__page {
+  padding: 50px 0;
+}
+.contact__us__page form {
+  padding: 15px;
+}
+.contact__us__page form input, .contact__us__page form select, .contact__us__page form textarea {
+  border-radius: 4px;
+  width: 220px;
+  height: 48px;
+  border-color: #DBDBDB;
+  font-size: 14px;
+  color: #050505;
+  font-size: 14px;
+  color: #050505;
+  border-right: 0;
+}
+.contact__us__page form input:focus, .contact__us__page form select:focus, .contact__us__page form textarea:focus {
+  box-shadow: none;
+  border-color: #DBDBDB;
+}
+.contact__us__page form input option, .contact__us__page form select option, .contact__us__page form textarea option {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #050505;
+}
+.contact__us__page form input::-moz-placeholder, .contact__us__page form select::-moz-placeholder, .contact__us__page form textarea::-moz-placeholder {
+  font-size: 14px;
+  color: #050505;
+}
+.contact__us__page form input::placeholder, .contact__us__page form select::placeholder, .contact__us__page form textarea::placeholder {
+  font-size: 14px;
+  color: #050505;
+}
+.contact__us__page form .input-group-text {
+  background-color: #fff;
+}
+.contact__us__page form label {
+  color: #050505;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact__us__page form button, .contact__us__page form a {
+  background: #008F2C;
+  border: 1px solid #008F2C;
+  padding: 8px 25px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 40px;
+}
+@media (max-width: 991px) {
+  .contact__us__page form {
+    padding: 10px;
+  }
+}
+
+.contact__details h5, .contact__details a {
+  color: #050505;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact__details span {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 nav {
   position: absolute !important;
   top: 0;
@@ -338,6 +413,13 @@ nav .offcanvas.offcanvas-start-lg {
     align-items: flex-start !important;
     gap: 25px;
   }
+}
+nav.inside__pages {
+  position: relative !important;
+  background-color: #000 !important;
+}
+nav.inside__pages .offcanvas.offcanvas-start-lg {
+  border-bottom: 0 !important;
 }
 
 footer {
