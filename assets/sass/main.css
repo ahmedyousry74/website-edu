@@ -284,8 +284,8 @@ input[type=checkbox]:checked {
   font-weight: 500;
 }
 .contact__us__page form button, .contact__us__page form a {
-  background: #008F2C;
-  border: 1px solid #008F2C;
+  background: #B9915E;
+  border: 1px solid #B9915E;
   padding: 8px 25px;
   border-radius: 4px;
   display: flex;
