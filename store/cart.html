@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/sass/main.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css"> -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/logo.svg"
+    />
+    <title> KAU Store </title>
+  </head>
+  <body class="bg-white">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg relative" id="navbar">
+      <button
+      class="justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg md:hidden flex"
+      >
+        
+        <img
+          src="./assets/images/en.svg"
+          alt="global"
+          width="40"
+          height="40"
+          loading="lazy"
+        />
+      </button>
+      <a class="navbar-brand d-lg-none" href="index.html">
+          <!-- <img src="./assets/images/logo.svg" alt="logo" loaing="lazy" width="100" height="100"> -->
+           <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+      </a>
+      <button
+        class="btn navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21M3 6H21M9 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>        
+      </button>
+        <div
+        class="offcanvas offcanvas-start-lg"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header d-flex d-lg-none">
+          <a
+            href="javascript:void(0)"
+            class="text-reset p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="close"
+          >
+          <img src="./assets/images/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        </a>
+        </div>
+        <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
+              <a class="navbar-brand lg:block hidden" href="index.html">            
+                <!-- <img src="./assets/images/logo.svg" alt="logo" loaing="lazy" width="180" class="object-fit-contain w-[180px]"> -->
+                <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+              </a>
+              <div class="search__input lg:flex hidden">
+                <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+                  <select class="form-select border border-solid !border-primary-color py-[8px] px-[15px] rounded-0 h-[48px] !w-[100px]">
+                    <option selected disabled>الفئات</option>
+                    <option value="1">أجهزة</option>
+                    <option value="2">الكتب</option>
+                    <option value="3">الروايات</option>
+                    <option value="4">الدعايا و الأعلان</option>
+                  </select>
+                  <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] px-[15px] w-[350px] h-[48px] text-third-color font-medium text-[16px]">
+                  <button type="submit" class="absolute top-[8px] left-[12px]">
+                    <img src="./assets/images/search.svg" alt="cart" loading="lazy" width="27" height="27">
+                  </button>
+                </form>
+              </div>
+              <ul class="lg:hidden flex justify-start items-start flex-col gap-3 mb-0">
+                <li>
+                  <a href="./index.html" class="text-primary-color text-[18px] font-medium active"> الرئيسية </a>
+                </li>
+                <li>
+                  <a href="./about-us.html" class="text-third-color text-[18px] font-medium"> من نحن </a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="text-third-color text-[18px] font-medium"> اتصل بنا </a>
+                </li>
+                <li>
+                  <a href="./be-store.html" class="text-third-color text-[18px] font-medium"> سجل كـتاجر </a>
+                </li>
+                <li>
+                  <a href="./stores.html" class="text-third-color text-[18px] font-medium"> المتاجر </a>
+                </li>
+              </ul>
+              <div class="flex justify-start items-center lg:flex-row sm:flex-col flex-wrap gap-4 relative">
+                <a href="./login.html" class="user">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>         
+                </a>
+                <a href="./cart.html" class="cart relative">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 8H21" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="bg-primary-color text-white text-[12px] font-medium w-[20px] h-[20px] rounded-[50%] flex justify-center items-center absolute top-[-8px] right-[-10px]"> 4 </span>                                       
+                </a>
+                <a href="./wishlist.html" class="wishlist relative">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>    
+                  <span class="bg-primary-color text-white text-[12px] font-medium w-[20px] h-[20px] rounded-[50%] flex justify-center items-center absolute top-[-8px] right-[-10px]"> 5 </span>                                       
+                </a>
+                <button
+                class="flex justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg"
+                >
+                  <img
+                    src="./assets/images/en.svg"
+                    alt="global"
+                    width="45"
+                    height="45"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="sec__navbar justify-between flex-row gap-2 items-center lg:flex hidden">
+      <button class="flex justify-start items-center flex-row gap-2 bg-primary-color text-white rounded-[4px] py-[10px] px-[35px]" >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+        <span> جميع التصنيفات </span>
+      </button>
+      <ul class="flex justify-start items-center flex-row gap-3 mb-0">
+        <li>
+          <a href="./index.html" class="text-primary-color text-[18px] font-medium active"> الرئيسية </a>
+        </li>
+         <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> أجهزة</a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الكتب </a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الروايات </a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الدعايا و الأعلان </a>
+        </li>
+        <li>
+          <a href="./contact-us.html" class="text-third-color text-[18px] font-medium"> اتصل بنا </a>
+        </li>
+         
+        <li>
+          <a href="./stores.html" class="text-third-color text-[18px] font-medium"> المتاجر </a>
+        </li>
+      </ul>
+      <div class="flex justify-start items-center flex-row gap-2">
+        <div class="icon">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#253D4E"/>
+            <path d="M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z" fill="#253D4E"/>
+            <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#253D4E"/>
+          </svg>
+        </div>
+        <div class="flex justify-start items-start flex-col">
+          <span class="text-primary-color font-bold text-[18px]"> 5462840210 </span>
+          <span class="text-third-color font-normal text-[15px]"> خدمة 24 / 7   </span>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- cart -->
+    <div class="cart__layout py-[50px] lg:px-[100px] px-[20px]">
+        <h2 class="text-third-color font-semibold text-[30px] mb-5"> السلة </h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">الصورة</th>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">المنتج</th>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">السعر</th>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">الكمية</th>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">الأجمالي</th>
+                            <th scope="col" class="text-third-color font-semibold text-[16px]">إجراء</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <img src="./assets/images/product-d-1.jpg" alt="book" width="90" height="90">
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px]"> 
+                                    موبايل أيفون 15 برو ماكس , 512GB
+                                </span> 
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px]"> 
+                                    150 ر.س
+                                </span>
+                            </td>
+                            <td>
+                                <span >
+                                    <form class="inc_dec text-start border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[250px] w-[100px] flex justify-between items-center flex-row h-[50px]">
+                                        <div class="value-button text-[20px] cursor-pointer" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                        <input type="number" id="number" value="1" class="text-center sm:w-auto w-[50px]" min="1"/>
+                                        <div class="value-button cursor-pointer" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                    </form>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px]">
+                                    100 ر.س
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <img src="./assets/images/trash.svg" alt="trash" width="24" height="24">
+                                </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <img src="./assets/images/product-d-7.jpg" alt="book" width="90" height="90">
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px]"> 
+                                    كتاب يحكي عن تاريخ الفلسفة الغربية
+                                </span> 
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px] w-100"> 
+                                    150 ر.س
+                                </span>
+                            </td>
+                            <td>
+                                <span >
+                                  <form class="inc_dec text-start border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[250px] w-[100px] flex justify-between items-center flex-row h-[50px]">
+                                    <div class="value-button text-[20px] cursor-pointer" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="1" class="text-center sm:w-auto w-[50px]" min="1"/>
+                                    <div class="value-button cursor-pointer" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                </form>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="text-fourth-color font-medium text-[15px]">
+                                    100 ر.س
+                                </span>
+                            </td>
+                            <td>
+                                <span>
+                                    <img src="./assets/images/trash.svg" alt="trash" width="24" height="24">
+                                </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex justify-between flex-row items-center flex-wrap gap-2">
+                    <a href="./index.html" class="bg-primary-color text-white border border-solid border-primary-color rounded-[6px] py-[8px] px-[15px] flex justify-center items-center"> إستكمال التسوق </a>
+                    <button class="bg-transparent text-primary-color border border-solid border-primary-color rounded-[6px] py-[8px] px-[15px] flex justify-center items-center"> مسح السلة </button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="cart__summary border border-solid border-[#ebebeb] rounded-[8px] p-4 mt-5">
+                    <div class="flex justify-between items-center flex-row">
+                        <h5 class="text-third-color font-semibold text-[18px]"> المجموع </h5>
+                        <p class="text-fourth-color font-semibold text-[15px]"> 1100 ر.س </p>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between items-center flex-row">
+                        <h5 class="text-third-color font-semibold text-[18px]"> الشحن </h5>
+                        <p class="text-fourth-color font-semibold text-[15px]"> 0 ر.س </p>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between items-center flex-row">
+                        <h5 class="text-third-color font-semibold text-[18px]"> الإجمالي </h5>
+                        <p class="text-fourth-color font-semibold text-[15px]"> 1100 ر.س </p>
+                    </div>
+                    <a href="./checkout.html" class="mt-4 bg-primary-color text-white font-medium text-[18px] w-100 py-[10px] px-[15px] rounded-[6px] w-100 flex justify-center items-center"> إتمام عملية الشراء </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart -->
+
+    <div class="features_website py-[50px] lg:px-[100px] px-[20px]">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+              <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0007 14H13.0007C14.1007 14 15.0007 13.1 15.0007 12V2H6.00073C4.50073 2 3.19074 2.82999 2.51074 4.04999" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.00098 17C2.00098 18.66 3.34098 20 5.00098 20H6.00098C6.00098 18.9 6.90098 18 8.00098 18C9.10098 18 10.001 18.9 10.001 20H14.001C14.001 18.9 14.901 18 16.001 18C17.101 18 18.001 18.9 18.001 20H19.001C20.661 20 22.001 18.66 22.001 17V14H19.001C18.451 14 18.001 13.55 18.001 13V10C18.001 9.45 18.451 9 19.001 9H20.291L18.581 6.01001C18.221 5.39001 17.561 5 16.841 5H15.001V12C15.001 13.1 14.101 14 13.001 14H12.001" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.00098 22C9.10555 22 10.001 21.1046 10.001 20C10.001 18.8954 9.10555 18 8.00098 18C6.89641 18 6.00098 18.8954 6.00098 20C6.00098 21.1046 6.89641 22 8.00098 22Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.001 22C17.1055 22 18.001 21.1046 18.001 20C18.001 18.8954 17.1055 18 16.001 18C14.8964 18 14.001 18.8954 14.001 20C14.001 21.1046 14.8964 22 16.001 22Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.001 12V14H19.001C18.451 14 18.001 13.55 18.001 13V10C18.001 9.45 18.451 9 19.001 9H20.291L22.001 12Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.00098 8H8.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.00098 11H6.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.00098 14H4.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="flex justify-start items-start flex-col gap-1">
+                  <h5 class="text-third-color font-semibold text-[18px] mb-0"> شحن مجاني </h5>
+                  <span class="text-fourth-color font-medium text-[15px] mb-0"> شحن مجاني على كل الطلبات </span>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="flex justify-start items-center flex-row gap-2  sm:mb-0 mb-3">
+              <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.0005 9.25H2.00049C1.59049 9.25 1.25049 8.91 1.25049 8.5C1.25049 8.09 1.59049 7.75 2.00049 7.75H22.0005C22.4105 7.75 22.7505 8.09 22.7505 8.5C22.7505 8.91 22.4105 9.25 22.0005 9.25Z" fill="#3BB77E"/>
+                <path d="M8.00049 17.25H6.00049C5.59049 17.25 5.25049 16.91 5.25049 16.5C5.25049 16.09 5.59049 15.75 6.00049 15.75H8.00049C8.41049 15.75 8.75049 16.09 8.75049 16.5C8.75049 16.91 8.41049 17.25 8.00049 17.25Z" fill="#3BB77E"/>
+                <path d="M14.5005 17.25H10.5005C10.0905 17.25 9.75049 16.91 9.75049 16.5C9.75049 16.09 10.0905 15.75 10.5005 15.75H14.5005C14.9105 15.75 15.2505 16.09 15.2505 16.5C15.2505 16.91 14.9105 17.25 14.5005 17.25Z" fill="#3BB77E"/>
+                <path d="M17.5605 21.25H6.44049C2.46049 21.25 1.25049 20.05 1.25049 16.11V7.89C1.25049 3.95 2.46049 2.75 6.44049 2.75H17.5505C21.5305 2.75 22.7405 3.95 22.7405 7.89V16.1C22.7505 20.05 21.5405 21.25 17.5605 21.25ZM6.44049 4.25C3.30049 4.25 2.75049 4.79 2.75049 7.89V16.1C2.75049 19.2 3.30049 19.74 6.44049 19.74H17.5505C20.6905 19.74 21.2405 19.2 21.2405 16.1V7.89C21.2405 4.79 20.6905 4.25 17.5505 4.25H6.44049Z" fill="#3BB77E"/>
+                </svg>
+                
+                <div class="flex justify-start items-start flex-col gap-1">
+                  <h5 class="text-third-color font-semibold text-[18px] mb-0"> الدفع </h5>
+                  <span class="text-fourth-color font-medium text-[15px] mb-0"> الدفع أمن 100%</span>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+              <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#3BB77E"/>
+                <path d="M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z" fill="#3BB77E"/>
+                <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#3BB77E"/>
+                </svg>
+                
+                <div class="flex justify-start items-start flex-col gap-1">
+                  <h5 class="text-third-color font-semibold text-[18px] mb-0"> خدمة عملاء </h5>
+                  <span class="text-fourth-color font-medium text-[15px] mb-0"> خدمة عملاء 24 / 7</span>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+              <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#3BB77E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 14.6667C8.5 15.9553 9.54467 17 10.8333 17H13C14.3807 17 15.5 15.8807 15.5 14.5C15.5 13.1193 14.3807 12 13 12H11C9.61929 12 8.5 10.8807 8.5 9.5C8.5 8.11929 9.61929 7 11 7H13.1667C14.4553 7 15.5 8.04467 15.5 9.33333M12 5.5V7M12 17V18.5" stroke="#3BB77E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h5 class="text-third-color font-semibold text-[18px] mb-0"> استرجاع</h5>
+                <span class="text-fourth-color font-medium text-[15px] mb-0"> يمكنك الأسترجاع خلال 7 أيام </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="bg-[#fff] py-[20px] sm:px-[50px] px-[20px] border-t border-solid border-[#e3e3e3]">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer__logo">
+              <!-- <img src="./assets/images/logo.svg" alt="logo" class="w-[180px]"> -->
+              <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2  class="text-third-color font-bold text-[22px] mb-4"> صفحات تهمك </h2>
+            <ul class="flex justify-start items-start flex-col gap-3">
+              <li>
+                <a href="./index.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> الرئيسية </a>
+              </li>
+              <li>
+                <a href="./about-us.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> من نحن </a>
+              </li>
+              <li>
+                <a href="./contact-us.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> اتصل بنا </a>
+              </li>
+              <li>
+                <a href="./be-store.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> سجل كـتاجر </a>
+              </li>
+              <li>
+                <a href="./stores.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> المتاجر </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-third-color font-bold text-[22px] mb-4"> تواصل معنا </h2>
+            <ul class="flex justify-start items-starty flex-col gap-3">
+              <li>
+                <a href="" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                  <img src="./assets/images/location.svg" alt="location">
+                  <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> المملكة العربية السعودية- جدة شارع التحلية </span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+546546258" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                  <img src="./assets/images/phone.svg" alt="phone">
+                  <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> 546546258 </span>
+                </a>
+              </li>
+              <li>
+                <a href="malito:kau-store@gmail.com" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                  <img src="./assets/images/email.svg" alt="email">
+                  <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> kau-store@gmail.com </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h2  class="text-third-color font-bold text-[22px] mb-4"> وسائل التواصل </h2>
+            <ul class="flex justify-start items-center flex-row gap-3">
+              <li>
+                <a href="" target="_blank"> <img src="./assets/images/facebook.svg" alt="facebook"> </a>
+              </li>
+              <li>
+                <a href="" target="_blank"> <img src="./assets/images/twitter.svg" alt="twitter"> </a>
+              </li>
+              <li>
+                <a href="" target="_blank"> <img src="./assets/images/tiktok.svg" alt="tiktok"> </a>
+              </li>
+              <li>
+                <a href="" target="_blank"> <img src="./assets/images/instagram.svg" alt="instagram"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-between items-center flex-row flex-wrap copyRight pt-2 border-t border-solid border-[#ececec]">
+          <span> © جميع الحقوق محفوظة - لــ مؤسسة الفكر العلمي 2024 </span>
+          <div class="flex justify-start items-center flex-row gap-3">
+            <img src="./assets/images/mada.svg" alt="mada" class="w-[75px]">
+            <img src="./assets/images/visa.png" alt="visa" class="!w-[75px]">
+            <img src="./assets/images/cash.svg" alt="cash" class="w-[75px]">
+          </div>
+        </div>
+    </footer>
+  
+  
+
+      <script src="./assets/js/jquery.js"></script>
+      <script src="./assets/js/wow.js"></script>
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./assets/js/all.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./assets/js/main.js"></script>
+    </body>
+  </html>

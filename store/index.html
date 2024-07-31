@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/sass/main.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css"> -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/logo.svg"
+    />
+    <title> KAU Store </title>
+  </head>
+  <body class="bg-white">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg relative" id="navbar">
+      <button
+      class="justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg md:hidden flex"
+      >
+        
+        <img
+          src="./assets/images/en.svg"
+          alt="global"
+          width="40"
+          height="40"
+          loading="lazy"
+        />
+      </button>
+      <a class="navbar-brand d-lg-none" href="index.html">
+          <!-- <img src="./assets/images/logo.svg" alt="logo" loaing="lazy" width="100" height="100"> -->
+           <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+      </a>
+      <button
+        class="btn navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21M3 6H21M9 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>        
+      </button>
+        <div
+        class="offcanvas offcanvas-start-lg"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header d-flex d-lg-none">
+          <a
+            href="javascript:void(0)"
+            class="text-reset p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="close"
+          >
+          <img src="./assets/images/close-circle.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        </a>
+        </div>
+        <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
+              <a class="navbar-brand lg:block hidden" href="index.html">            
+                <!-- <img src="./assets/images/logo.svg" alt="logo" loaing="lazy" width="180" class="object-fit-contain w-[180px]"> -->
+                <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+              </a>
+              <div class="search__input lg:flex hidden">
+                <form action="" class="relative flex justify-start items-start flex-row gap-0 form__search">
+                  <select class="form-select border border-solid !border-primary-color py-[8px] px-[15px] rounded-0 h-[48px] !w-[100px]">
+                    <option selected disabled>الفئات</option>
+                    <option value="1">أجهزة</option>
+                    <option value="2">الكتب</option>
+                    <option value="3">الروايات</option>
+                    <option value="4">الدعايا و الأعلان</option>
+                    
+                  </select>
+                  <input type="text" placeholder="بحث ..." class="bg-transparent border border-solid !border-primary-color py-[8px] px-[15px] w-[350px] h-[48px] text-third-color font-medium text-[16px]">
+                  <button type="submit" class="absolute top-[8px] left-[12px]">
+                    <img src="./assets/images/search.svg" alt="cart" loading="lazy" width="27" height="27">
+                  </button>
+                </form>
+              </div>
+              <ul class="lg:hidden flex justify-start items-start flex-col gap-3 mb-0">
+                <li>
+                  <a href="./index.html" class="text-primary-color text-[18px] font-medium active"> الرئيسية </a>
+                </li>
+                <li>
+                  <a href="./about-us.html" class="text-third-color text-[18px] font-medium"> من نحن </a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="text-third-color text-[18px] font-medium"> اتصل بنا </a>
+                </li>
+                <li>
+                  <a href="./be-store.html" class="text-third-color text-[18px] font-medium"> سجل كـتاجر </a>
+                </li>
+                <li>
+                  <a href="./stores.html" class="text-third-color text-[18px] font-medium"> المتاجر </a>
+                </li>
+              </ul>
+              <div class="flex justify-start items-center lg:flex-row sm:flex-col flex-wrap gap-4 relative">
+                <a href="./login.html" class="user">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>         
+                </a>
+                <a href="./cart.html" class="cart relative">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 8H21" stroke="#253D4E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="bg-primary-color text-white text-[12px] font-medium w-[20px] h-[20px] rounded-[50%] flex justify-center items-center absolute top-[-8px] right-[-10px]"> 4 </span>                                       
+                </a>
+                <a href="./wishlist.html" class="wishlist relative">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#253D4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>    
+                  <span class="bg-primary-color text-white text-[12px] font-medium w-[20px] h-[20px] rounded-[50%] flex justify-center items-center absolute top-[-8px] right-[-10px]"> 5 </span>                                       
+                </a>
+                <button
+                class="flex justify-center items-center flex-row gap-1 text-[#7A7A7A] font-medium text-lg"
+                >
+                  <img
+                    src="./assets/images/en.svg"
+                    alt="global"
+                    width="45"
+                    height="45"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <div class="sec__navbar justify-between flex-row gap-2 items-center lg:flex hidden relative">
+      <button id="toggleButton" class="flex justify-start items-center flex-row gap-2 bg-primary-color text-white rounded-[4px] py-[10px] px-[35px]" >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#E6EAEF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+        <span> جميع التصنيفات </span>
+      </button>
+      <div id="categoriesList" class="categories__items__list bg-[#fff] p-[20px] rounded-[12px] w-[450px] z-50 absolute top-[60px] right-[35px] ">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="./categories.html">
+              <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                <img src="./assets/images/electr1.png" alt="category" width="30" height="30">
+                <span class="text-third-color font-semibold text-[13px]"> أجهزة و تكنولوجيا</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="./categories.html">
+              <div class="categories_item flex justify-start items-center flex-row gap-2 z-50 mb-3 py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                <img src="./assets/images/book1.png" alt="category" width="30" height="30">
+                <span class="text-third-color font-semibold text-[13px]"> كتب و مقررات دراسية </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="./categories.html">
+              <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                <img src="./assets/images/novel10.jpg" alt="category" width="30" height="30">
+                <span class="text-third-color font-semibold text-[13px]"> كتب عامة و روايات </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="./categories.html">
+              <div class="categories_item flex justify-start items-center flex-row gap-2 z-50  py-[8px] px-[15px] rounded-[6px] w-100 h-[50px]">
+                <img src="./assets/images/shirt2.webp" alt="category" width="30" height="30">
+                <span class="text-third-color font-semibold text-[13px]"> دعايا و إعلان</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="flex justify-start items-center flex-row gap-3 mb-0">
+        <li>
+          <a href="./index.html" class="text-primary-color text-[18px] font-medium active"> الرئيسية </a>
+        </li>
+         <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> أجهزة</a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الكتب </a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الروايات </a>
+        </li>
+        <li>
+          <a href="./categories.html" class="text-third-color text-[18px] font-medium"> الدعايا و الأعلان </a>
+        </li>
+        <li>
+          <a href="./contact-us.html" class="text-third-color text-[18px] font-medium"> اتصل بنا </a>
+        </li>
+         
+        <li>
+          <a href="./stores.html" class="text-third-color text-[18px] font-medium"> المتاجر </a>
+        </li>
+      </ul>
+      <div class="flex justify-start items-center flex-row gap-2">
+        <div class="icon">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#253D4E"/>
+            <path d="M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z" fill="#253D4E"/>
+            <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#253D4E"/>
+          </svg>
+        </div>
+        <div class="flex justify-start items-start flex-col">
+          <span class="text-primary-color font-bold text-[18px]"> 5462840210 </span>
+          <span class="text-third-color font-normal text-[15px]"> خدمة 24 / 7   </span>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- header -->
+      <header class="sm:p-[20px] p-[15px]">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-[#192C57] bg-center bg-no-repeat bg-cover w-100 rounded-[25px] sm:py-[25px] py-[15px] sm:px-[50px] px-[20px] sm:h-[550px] h-[100%]">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header_info flex justify-start items-start flex-col gap-3 sm:mt-[100px] mb-3">
+                  <span class="bg-second-color text-primary-color rounded-[4px] py-[4px] px-[15px] sm:text-[14px] text-[13px] font-semibold"> خصم </span>
+                  <h2 class="text-white font-bold sm:text-[55px] text-[35px] mb-0"> أفضل الأيباد لدينا هنا </h2>
+                  <p class="text-white sm:text-[18px] text-[16px] font-medium mb-0"> شحن مجاني  </p>
+                  <span class="text-[#ffffffc6] sm:text-[15px] text-[14px] font-medium"> سعر يبدأ من 300$ </span>
+                  <a href="" class="bg-primary-color text-white font-medium flex justify-center items-center py-[8px] px-[25px] rounded-[4px]"> تسوق الاّن </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/images/slide1-ipad.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-[#2C2C46] bg-center bg-no-repeat bg-cover w-100 rounded-[25px] sm:py-[25px] py-[15px] sm:px-[50px] px-[20px] sm:h-[550px] h-[100%]">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header_info flex justify-start items-start flex-col gap-3 sm:mt-[100px] mb-3">
+                  <span class="bg-second-color text-primary-color rounded-[4px] py-[4px] px-[15px] sm:text-[14px] text-[13px] font-semibold"> خصم </span>
+                  <h2 class="text-white font-bold tsm:text-[55px] text-[35px] mb-0"> كل الجديد لك لـحياة أفضل  </h2>
+                  <p class="text-white sm:text-[18px] text-[16px] font-medium mb-0"> خصومات و عروض متاجة لــك </p>
+                  <span class="text-[#ffffffc6] sm:text-[15px] text-[14px] font-medium"> سعر يبدأ من 500$ </span>
+                  <a href="" class="bg-primary-color text-white font-medium flex justify-center items-center py-[8px] px-[25px] rounded-[4px]"> تسوق الاّن </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/images/slide1-watches.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-[#202F22] bg-center bg-no-repeat bg-cover w-100 rounded-[25px] sm:py-[25px] py-[15px] sm:px-[50px] px-[20px] sm:h-[550px] h-[100%]">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header_info flex justify-start items-start flex-col gap-3 sm:mt-[100px] mb-3">
+                  <span class="bg-second-color text-primary-color rounded-[4px] py-[4px] px-[15px] sm:text-[14px] text-[13px] font-semibold"> خصم </span>
+                  <h2 class="text-white font-bold m:text-[55px] text-[35px] mb-0"> عرض على الأيفون بـخصم 25% </h2>
+                  <p class="text-white sm:text-[18px] text-[16px] font-medium mb-0"> شحن مجاني  </p>
+                  <span class="text-[#ffffffc6] sm:text-[15px] text-[14px] font-medium"> سعر يبدأ من 150$ </span>
+                  <a href="" class="bg-primary-color text-white font-medium flex justify-center items-center py-[8px] px-[25px] rounded-[4px]"> تسوق الاّن </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/images/slide1-iphone.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+    <!-- header -->
+
+    <!-- categories -->
+    <div class="featured__categories pt-[20px] lg:px-[100px] px-[20px]">
+      <h2 class="text-third-color font-semibold text-[25px] mb-4"> الأقسام </h2>
+      <div class="owl-carousel featured__categories__carousal owl-theme">
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center bg-[#EDF1FF]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/electr1.png" alt="mobile" loading="lazy" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> موبايلات </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#EDF1FF]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/electr2.png" alt="mobile" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> أجهزة </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#FFF5E8]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+            
+              <img src="./assets/images/electr3.png" alt="mobile" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> ساعات سمارت </span>
+            </a>
+        
+        </div>
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#E9E5EF]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/electr4.png" alt="mobile" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> لاب توب </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#DAEBE9]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/electr5.png" alt="mobile" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> أجهزة </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#F2F5DE]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/electr6.png" alt="mobile" class="w-[64px] h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> أجهزة </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#EEEAE0]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/book1.png" alt="mobile" class="w-full h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> كتب علمية </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#E5F0F9]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/novel3.jpg" alt="mobile" class="w-full h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> كتب سياسية </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#EDF1FF]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/novel4.jpg" alt="mobile" class="w-full h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> كتب دينية </span>
+            </a>
+          </div>
+        
+        
+          <div class="category__item rounded-[4px] py-[15px] px-[15px] flex justify-center items-center flex-col gap-3 bg-[#EDF1FF]">
+            <a href="./category.html" class="flex justify-center items-center flex-col gap-3">
+              <img src="./assets/images/novel5.jpg" alt="mobile" class="w-full h-[64px] object-contain">
+              <span class="text-third-color font-semibold text-[17px]"> كتب فلسفة </span>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+    <!-- categories -->
+
+    <!-- ads -->
+    <div class="ads__ pt-[40px] lg:px-[100px] px-[20px]">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="ads__item bg-center bg-cover h-[300px] w-full bg-no-repeat rounded-lg p-2 sm:mb-0 mb-3" style="background-image: url('./assets/images/h6_banner1.jpg');">
+            <div class="ads__info sm:mt-[75px] flex justify-start items-start flex-col gap-3">
+              <h1 class="text-white font-semibold text-[35px]"> خصم 20%  </h1>
+              <p class="text-white font-semibold text-[18px]"> كل شئ يمر بـشكل جيد مع كتاب عظيم </p>
+              <a href="" class="bg-white text-third-color px-[25px] py-[9px] rounded-[25px] font-semibold text-[15px]"> تسوق الاّن </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ads__item bg-center bg-cover h-[300px] w-full bg-no-repeat rounded-lg p-2 sm:mb-0 mb-3" style="background-image: url('./assets/images/h6_banner2.jpg');">
+            <div class="ads__info sm:mt-[75px] flex justify-start items-start flex-col gap-3">
+              <h1 class="text-white font-semibold text-[35px]"> خصم 20%  </h1>
+              <p class="text-white font-semibold text-[18px]"> كل شئ يمر بـشكل جيد مع كتاب عظيم </p>
+              <a href="" class="bg-white text-third-color px-[25px] py-[9px] rounded-[25px] font-semibold text-[15px]"> تسوق الاّن </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ads -->
+
+    <!-- products -->
+    <div class="popular__products pt-[40px] lg:px-[100px] px-[20px]">
+      <h2 class="text-third-color font-semibold text-[25px] mb-4"> منتجات مشهورة </h2>
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product3.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product10.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product4.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product5.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product6.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product7.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product8.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="product__img relative">
+                  <a href="product-details.html">
+                    <img src="./assets/images/product9.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                <div class="product__actions flex justify-center items-center flex-row">
+                  <button class="toggleButton">  
+                    <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                  </button>
+                  <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                </div>
+              </div>
+              <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+                <a href="product-details.html" class=" flex justify-start items-start flex-col gap-2">
+                  <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> أجهزة </span>
+                  <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]">  موبايل أيفون 15 برو ماكس , 512GB </h1>
+                  <div class="stars flex justify-start items-center flex-row gap-1">
+                    <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                    <i class="fa-regular fa-star sm:text-[12px] text-[10px] text-third-color"></i>
+                  </div>
+                  <div class="price flex justify-start items-center flex-row gap-3">
+                    <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                    <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                  </div>
+                </a>
+                <div class="add_to_cart w-100">
+                  <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+                </div>
+                <div class="status absolute top-[2px] right-[-1px]">
+                  <span class="bg-[#f59758] text-white"> خصم </span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- products -->
+
+    <!-- ads -->
+    <div class="ads__ bg-center bg-cover h-[300px] w-full bg-no-repeat rounded-lg p-2 flex justify-center items-center flex-col gap-4" style="background-image: url('./assets/images/h6_bg1.jpg');">
+      <h3 class="text-white font-bold sm:text-[40px] text-[30px] mb-0 text-center"> أقوى العروض على الكتب  </h3>
+      <span class="text-white font-bold sm:text-[16px] text-[14px]"> سجل الاّن لـتحصل على أفضل العروض </span>
+      <a href="" class="bg-primary-color text-white sm:py-[10px] py-[6px] sm:px-[30px] px-[15px] rounded-[8px] flex justify-center items-center"> سجل الاّن </a>
+    </div>
+    <!-- ads -->
+
+    <!-- products -->
+    <div class="popular__products pt-[40px] lg:px-[100px] px-[20px]">
+      <h2 class="text-third-color font-semibold text-[25px] mb-4"> وصل حديثا </h2>
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt2.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt3.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt4.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt5.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt6.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt7.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+            <div class="product__img relative">
+              <a href="product-details-shirt.html">
+                <img src="./assets/images/shirt3.webp" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+              </a>
+              <div class="product__actions flex justify-center items-center flex-row">
+                <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+              </div>
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2">
+              <a href="product-details-shirt.html" class="flex justify-start items-start flex-col gap-2">
+                <span class="text-fourth-color sm:text-[13px] text-[12px] font-normal"> دعاية و إعلان </span>
+                <h1 class="text-third-color font-semibold sm:text-[15px] text-[13px] m-0 leading-[1.5]"> تيشيرت طباعة </h1>
+                <div class="stars flex justify-start items-center flex-row gap-1">
+                  <i class="fa-solid fa-star text-primary-color sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-solid fa-star text-primary-color  sm:text-[12px] text-[10px]"></i>
+                  <i class="fa-regular fa-star  sm:text-[12px] text-third-color text-[10px]"></i>
+                </div>
+                <div class="price flex justify-start items-center flex-row gap-3">
+                  <span class="text-third-color font-semibold sm:text-[15px] text-[12px]"> 150 ر.س </span>
+                  <span class="text-decoration-line-through text-fourth-color font-medium sm:text-[14px] text-[12px]"> 200 ر.س </span>
+                </div>
+              </a>
+              <div class="add_to_cart w-100">
+                <button class="bg-second-color text-primary-color font-medium sm:text-[15px] text-[13px] rounded-[6px] sm:py-[8px] py-[5px] sm:px-[25px] px-[12px] w-100"> إضافة إلى السلة </button>
+              </div>
+              <div class="status absolute top-[2px] right-[-1px]">
+                <span class="bg-[#f59758] text-white"> خصم </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- products -->
+
+    <!-- stores -->
+    <div class="stores py-[40px] lg:px-[100px] px-[20px]">
+      <h2 class="text-third-color font-semibold text-[25px] mb-4"> المتاجر المشتركة </h2>
+      <div class="owl-carousel stores__carousal owl-theme">
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store1.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store2.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store3.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store4.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store5.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+        
+          <div class="store__img flex justify-center items-center">
+            <img src="./assets/images/store6.png" alt="store" class="object-contain max-w-[144px]">
+          </div>
+      
+      </div>
+    </div>
+    <!-- stores -->
+
+    <!-- be store -->
+    <div class="be__store bg-second-color p-5 flex justify-center items-center flex-col gap-3">
+      <h2 class="text-primary-color sm:text-[35px] text-[25px] font-semibold text-center"> كن متجر مشارك معنا </h2>
+      <p class="text-primary-color sm:text-[20px] text-[18px] font-medium text-center"> يمكنك مشاهدة منتجاتك وجذب شريحة جديدة من المستخدمين </p>
+      <a href="./be-store.html" class="text-white sm:text-[20px] text-[16px] font-semibold bg-primary-color  flex justify-center items-center sm:py-[10px] py-[6px] sm:px-[30px] px-[15px] rounded-[8px]"> سـجـل كـمـتـجـر </a>
+    </div>
+    <!-- be store -->
+
+    <!-- products -->
+      <div class="popular__products pt-[40px] lg:px-[100px] px-[20px]">
+        <div class="flex justify-between items-center flex-row flex-wrap w-100 mb-4">
+          <h2 class="text-third-color font-semibold text-[25px]"> أحدث العروض </h2>
+          <a href="./offers.html" class="text-primary-color font-medium text-[15px] !underline"> كل العروض </a>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="flex justify-start items-start flex-row gap-3 w-100">
+                <div class="product__img relative w-50">
+                  <a href="product-details-book.html">
+                    <img src="./assets/images/novel2.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                  
+                  <div class="product__actions flex justify-center items-center flex-row sm:w-[100px] w-[75px]">
+                    <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                    <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                  </div>
+                </div>
+                <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+                  <a href="product-details-book.html" class="flex justify-start items-start flex-col gap-2">
+                    <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+                    <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية  </h1>
+                    <div class="stars flex justify-start items-center flex-row gap-1">
+                      <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-regular fa-star !text-third-color  text-[12px]"></i>
+                    </div>
+                    <div class="price flex justify-start items-center flex-row gap-3">
+                      <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+                      <span class="text-decoration-line-through text-fourth-color font-medium text-[14px]"> 200 ر.س </span>
+                    </div>
+                  </a>
+                  <div class="add_to_cart w-100">
+                    <button class="bg-second-color text-primary-color font-medium text-[15px] rounded-[6px] py-[8px] px-[25px] w-100"> إضافة إلى السلة </button>
+                  </div>
+                  <div class="status absolute top-[2px] right-[-1px]">
+                    <span class="bg-[#f59758] text-white"> خصم </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="flex justify-start items-start flex-row gap-3 w-100">
+                <div class="product__img relative w-50">
+                  <a href="product-details-book.html">
+                    <img src="./assets/images/novel4.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                  
+                  <div class="product__actions flex justify-center items-center flex-row sm:w-[100px] w-[75px]">
+                    <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                    <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                  </div>
+                </div>
+                <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+                  <a href="product-details-book.html" class="flex justify-start items-start flex-col gap-2">
+                    <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+                    <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية  </h1>
+                    <div class="stars flex justify-start items-center flex-row gap-1">
+                      <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-regular fa-star !text-third-color  text-[12px]"></i>
+                    </div>
+                    <div class="price flex justify-start items-center flex-row gap-3">
+                      <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+                      <span class="text-decoration-line-through text-fourth-color font-medium text-[14px]"> 200 ر.س </span>
+                    </div>
+                  </a>
+                  <div class="add_to_cart w-100">
+                    <button class="bg-second-color text-primary-color font-medium text-[15px] rounded-[6px] py-[8px] px-[25px] w-100"> إضافة إلى السلة </button>
+                  </div>
+                  <div class="status absolute top-[2px] right-[-1px]">
+                    <span class="bg-[#f59758] text-white"> خصم </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="flex justify-start items-start flex-row gap-3 w-100">
+                <div class="product__img relative w-50">
+                  <a href="product-details-book.html">
+                    <img src="./assets/images/novel6.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                  
+                  <div class="product__actions flex justify-center items-center flex-row sm:w-[100px] w-[75px]">
+                    <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                    <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                  </div>
+                </div>
+                <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+                  <a href="product-details-book.html" class="flex justify-start items-start flex-col gap-2">
+                    <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+                    <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية  </h1>
+                    <div class="stars flex justify-start items-center flex-row gap-1">
+                      <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-regular fa-star !text-third-color  text-[12px]"></i>
+                    </div>
+                    <div class="price flex justify-start items-center flex-row gap-3">
+                      <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+                      <span class="text-decoration-line-through text-fourth-color font-medium text-[14px]"> 200 ر.س </span>
+                    </div>
+                  </a>
+                  <div class="add_to_cart w-100">
+                    <button class="bg-second-color text-primary-color font-medium text-[15px] rounded-[6px] py-[8px] px-[25px] w-100"> إضافة إلى السلة </button>
+                  </div>
+                  <div class="status absolute top-[2px] right-[-1px]">
+                    <span class="bg-[#f59758] text-white"> خصم </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product__item border border-solid border-[#ececec] rounded-[15px] relative py-2 mb-4">
+              <div class="flex justify-start items-start flex-row gap-3 w-100">
+                <div class="product__img relative w-50">
+                  <a href="product-details-book.html">
+                    <img src="./assets/images/novel7.jpg" alt="product" loading="lazy" class="h-[150px] w-100 object-contain">
+                  </a>
+                  
+                  <div class="product__actions flex justify-center items-center flex-row sm:w-[100px] w-[75px]">
+                    <button class="toggleButton">  
+                  <svg class="heartIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.8101C12.28 20.9301 11.72 20.9301 11.38 20.8101C8.48 19.8201 2 15.6901 2 8.6901C2 5.6001 4.49 3.1001 7.56 3.1001C9.38 3.1001 10.99 3.9801 12 5.3401C13.01 3.9801 14.63 3.1001 16.44 3.1001C19.51 3.1001 22 5.6001 22 8.6901C22 15.6901 15.52 19.8201 12.62 20.8101Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                
+                </button>
+                    <button> <img src="./assets/images/eye.svg" alt="eye" loading="lazy" class="w-[20px] h-[20px]" type="button" data-bs-toggle="modal" data-bs-target="#quickView"> </button>
+                  </div>
+                </div>
+                <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+                  <a href="product-details-book.html" class="flex justify-start items-start flex-col gap-2">
+                    <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+                    <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية  </h1>
+                    <div class="stars flex justify-start items-center flex-row gap-1">
+                      <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                      <i class="fa-regular fa-star !text-third-color  text-[12px]"></i>
+                    </div>
+                    <div class="price flex justify-start items-center flex-row gap-3">
+                      <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+                      <span class="text-decoration-line-through text-fourth-color font-medium text-[14px]"> 200 ر.س </span>
+                    </div>
+                  </a>
+                  <div class="add_to_cart w-100">
+                    <button class="bg-second-color text-primary-color font-medium text-[15px] rounded-[6px] py-[8px] px-[25px] w-100"> إضافة إلى السلة </button>
+                  </div>
+                  <div class="status absolute top-[2px] right-[-1px]">
+                    <span class="bg-[#f59758] text-white"> خصم </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- products -->
+
+    <!-- ads -->
+    <div class="ads__ bg-center bg-cover sm:h-[350px] h-[450px] w-full bg-no-repeat rounded-lg flex sm:justify-center sm:items-end justify-center items-center flex-col gap-4 sm:p-[20px] p-[8px]" style="background-image: url('./assets/images/banner-17.jpg');">
+      <h3 class="text-white font-bold sm:text-[40px] text-[30px] mb-0 text-center"> أقوى العروض على الهيدفون  </h3>
+      <span class="text-white font-bold sm:text-[16px] text-[15px] text-center"> سجل الاّن لـتحصل على أفضل العروض </span>
+      <a href="" class="bg-primary-color text-white sm:py-[10px] py-[6px] sm:px-[30px] px-[15px] rounded-[8px] flex justify-center items-center"> سجل الاّن </a>
+    </div>
+    <!-- ads -->
+
+    <!-- four section products -->
+    <div class="four__products pt-[40px] lg:px-[100px] px-[20px]">
+      <div class="row">
+        <div class="col-md-4">
+          <h3> الأكثر مبيعا </h3>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/shirt.webp" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> دعاية و إعلان </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> تيشيرت طباعة  تيشيرت طباعة </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/shirt3.webp" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> دعاية و إعلان </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> تيشيرت طباعة  تيشيرت طباعة </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/shirt5.webp" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> دعاية و إعلان </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> تيشيرت طباعة  تيشيرت طباعة </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3> الأكثر تقييما </h3>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/product4.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> أجهزة</span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> موبايل أيفون 15 برو ماكس , 512GB </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/product6.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> أجهزة</span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> موبايل أيفون 15 برو ماكس , 512GB </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/product7.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> أجهزة</span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> موبايل أيفون 15 برو ماكس , 512GB </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3> الأكثر شهرة </h3>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/novel9.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/novel3.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+          <div class="product_item_sec flex justify-start flex-row items-start gap-2 w-100 mb-3">
+            <div class="product_img_sec bg-[#F7F8FA] p-2 rounded-[6px] w-50">
+              <img src="./assets/images/novel10.jpg" alt="product" loading="lazy" class="object-contain w-[100px] h-[100px]">
+            </div>
+            <div class="product__info flex justify-start items-start flex-col gap-2 p-2 w-100">
+              <span class="text-fourth-color text-[13px] font-normal"> روايات </span>
+              <h1 class="text-third-color font-semibold text-[15px] m-0 leading-[1.5]"> كتاب يحكي عن تاريخ الفلسفة الغربية </h1>
+              <div class="stars flex justify-start items-center flex-row gap-1">
+                <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                <i class="fa-regular fa-star  text-[12px]"></i>
+              </div>
+              <div class="price flex justify-start items-center flex-row gap-3">
+                <span class="text-third-color font-semibold text-[15px]"> 150 ر.س </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- four section products -->
+
+    <div class="features_website py-[50px] lg:px-[100px] px-[20px]">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+            <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.0007 14H13.0007C14.1007 14 15.0007 13.1 15.0007 12V2H6.00073C4.50073 2 3.19074 2.82999 2.51074 4.04999" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.00098 17C2.00098 18.66 3.34098 20 5.00098 20H6.00098C6.00098 18.9 6.90098 18 8.00098 18C9.10098 18 10.001 18.9 10.001 20H14.001C14.001 18.9 14.901 18 16.001 18C17.101 18 18.001 18.9 18.001 20H19.001C20.661 20 22.001 18.66 22.001 17V14H19.001C18.451 14 18.001 13.55 18.001 13V10C18.001 9.45 18.451 9 19.001 9H20.291L18.581 6.01001C18.221 5.39001 17.561 5 16.841 5H15.001V12C15.001 13.1 14.101 14 13.001 14H12.001" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.00098 22C9.10555 22 10.001 21.1046 10.001 20C10.001 18.8954 9.10555 18 8.00098 18C6.89641 18 6.00098 18.8954 6.00098 20C6.00098 21.1046 6.89641 22 8.00098 22Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.001 22C17.1055 22 18.001 21.1046 18.001 20C18.001 18.8954 17.1055 18 16.001 18C14.8964 18 14.001 18.8954 14.001 20C14.001 21.1046 14.8964 22 16.001 22Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22.001 12V14H19.001C18.451 14 18.001 13.55 18.001 13V10C18.001 9.45 18.451 9 19.001 9H20.291L22.001 12Z" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.00098 8H8.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.00098 11H6.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.00098 14H4.00098" stroke="#3BB77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h5 class="text-third-color font-semibold text-[18px] mb-0"> شحن مجاني </h5>
+                <span class="text-fourth-color font-medium text-[15px] mb-0"> شحن مجاني على كل الطلبات </span>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="flex justify-start items-center flex-row gap-2  sm:mb-0 mb-3">
+            <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0005 9.25H2.00049C1.59049 9.25 1.25049 8.91 1.25049 8.5C1.25049 8.09 1.59049 7.75 2.00049 7.75H22.0005C22.4105 7.75 22.7505 8.09 22.7505 8.5C22.7505 8.91 22.4105 9.25 22.0005 9.25Z" fill="#3BB77E"/>
+              <path d="M8.00049 17.25H6.00049C5.59049 17.25 5.25049 16.91 5.25049 16.5C5.25049 16.09 5.59049 15.75 6.00049 15.75H8.00049C8.41049 15.75 8.75049 16.09 8.75049 16.5C8.75049 16.91 8.41049 17.25 8.00049 17.25Z" fill="#3BB77E"/>
+              <path d="M14.5005 17.25H10.5005C10.0905 17.25 9.75049 16.91 9.75049 16.5C9.75049 16.09 10.0905 15.75 10.5005 15.75H14.5005C14.9105 15.75 15.2505 16.09 15.2505 16.5C15.2505 16.91 14.9105 17.25 14.5005 17.25Z" fill="#3BB77E"/>
+              <path d="M17.5605 21.25H6.44049C2.46049 21.25 1.25049 20.05 1.25049 16.11V7.89C1.25049 3.95 2.46049 2.75 6.44049 2.75H17.5505C21.5305 2.75 22.7405 3.95 22.7405 7.89V16.1C22.7505 20.05 21.5405 21.25 17.5605 21.25ZM6.44049 4.25C3.30049 4.25 2.75049 4.79 2.75049 7.89V16.1C2.75049 19.2 3.30049 19.74 6.44049 19.74H17.5505C20.6905 19.74 21.2405 19.2 21.2405 16.1V7.89C21.2405 4.79 20.6905 4.25 17.5505 4.25H6.44049Z" fill="#3BB77E"/>
+              </svg>
+              
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h5 class="text-third-color font-semibold text-[18px] mb-0"> الدفع </h5>
+                <span class="text-fourth-color font-medium text-[15px] mb-0"> الدفع أمن 100%</span>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+            <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.48999 2.95982 6.92999 4.83982 5.00999C6.71982 3.09999 9.23982 2.04999 11.9498 2.04999C17.4898 2.04999 21.9998 6.55999 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.38999 16.6698 3.54999 11.9498 3.54999C9.63982 3.54999 7.49982 4.43999 5.90982 6.05999C4.30982 7.68999 3.45982 9.85999 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z" fill="#3BB77E"/>
+              <path d="M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z" fill="#3BB77E"/>
+              <path d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z" fill="#3BB77E"/>
+              </svg>
+              
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h5 class="text-third-color font-semibold text-[18px] mb-0"> خدمة عملاء </h5>
+                <span class="text-fourth-color font-medium text-[15px] mb-0"> خدمة عملاء 24 / 7</span>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="flex justify-start items-center flex-row gap-2 sm:mb-0 mb-3">
+            <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#3BB77E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.5 14.6667C8.5 15.9553 9.54467 17 10.8333 17H13C14.3807 17 15.5 15.8807 15.5 14.5C15.5 13.1193 14.3807 12 13 12H11C9.61929 12 8.5 10.8807 8.5 9.5C8.5 8.11929 9.61929 7 11 7H13.1667C14.4553 7 15.5 8.04467 15.5 9.33333M12 5.5V7M12 17V18.5" stroke="#3BB77E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="flex justify-start items-start flex-col gap-1">
+              <h5 class="text-third-color font-semibold text-[18px] mb-0"> استرجاع</h5>
+              <span class="text-fourth-color font-medium text-[15px] mb-0"> يمكنك الأسترجاع خلال 7 أيام </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#fff] py-[20px] sm:px-[50px] px-[20px] border-t border-solid border-[#e3e3e3]">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer__logo">
+            <!-- <img src="./assets/images/logo.svg" alt="logo" class="w-[180px]"> -->
+            <h6 class="text-primary-color text-[30px] font-semibold"> LOGO </h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h2  class="text-third-color font-bold text-[22px] mb-4"> صفحات تهمك </h2>
+          <ul class="flex justify-start items-start flex-col gap-3">
+            <li>
+              <a href="./index.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> الرئيسية </a>
+            </li>
+            <li>
+              <a href="./about-us.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> من نحن </a>
+            </li>
+            <li>
+              <a href="./contact-us.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> اتصل بنا </a>
+            </li>
+            <li>
+              <a href="./be-store.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> سجل كـتاجر </a>
+            </li>
+            <li>
+              <a href="./stores.html" class="text-third-color text-[16px] font-medium hover:text-primary-color"> المتاجر </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2 class="text-third-color font-bold text-[22px] mb-4"> تواصل معنا </h2>
+          <ul class="flex justify-start items-starty flex-col gap-3">
+            <li>
+              <a href="" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                <img src="./assets/images/location.svg" alt="location">
+                <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> المملكة العربية السعودية- جدة شارع التحلية </span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+546546258" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                <img src="./assets/images/phone.svg" alt="phone">
+                <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> 546546258 </span>
+              </a>
+            </li>
+            <li>
+              <a href="malito:kau-store@gmail.com" target="_blank" class="flex justify-start items-start flex-row gap-2">  
+                <img src="./assets/images/email.svg" alt="email">
+                <span class="text-third-color font-medium text-[16px] hover:text-primary-color"> kau-store@gmail.com </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h2  class="text-third-color font-bold text-[22px] mb-4"> وسائل التواصل </h2>
+          <ul class="flex justify-start items-center flex-row gap-3">
+            <li>
+              <a href="" target="_blank"> <img src="./assets/images/facebook.svg" alt="facebook"> </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> <img src="./assets/images/twitter.svg" alt="twitter"> </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> <img src="./assets/images/tiktok.svg" alt="tiktok"> </a>
+            </li>
+            <li>
+              <a href="" target="_blank"> <img src="./assets/images/instagram.svg" alt="instagram"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex justify-between items-center flex-row flex-wrap copyRight pt-2 border-t border-solid border-[#ececec]">
+        <span> © جميع الحقوق محفوظة - لــ مؤسسة الفكر العلمي 2024 </span>
+        <div class="flex justify-start items-center flex-row gap-3">
+          <img src="./assets/images/mada.svg" alt="mada" class="w-[75px]">
+          <img src="./assets/images/visa.png" alt="visa" class="!w-[75px]">
+          <img src="./assets/images/cash.svg" alt="cash" class="w-[75px]">
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Modal quickView -->
+    <div class="modal fade" id="quickView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="flex justify-start items-start flex-row mb-4">
+              <button data-bs-dismiss="modal" aria-label="Close" type="button"> <img src="./assets/images/close-circle.svg" alt="close" width="30" height="30"> </button>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="product_details_imgs flex justify-start items-start flex-col gap-3 relative">
+                      <div class="big_img border border-solid border-[#ebebeb] rounded-[6px] p-4 sm:h-[400px] h-[300px] w-100">
+                          <img src="./assets/images/product-d-1.jpg" alt="products" loading="lazy" class="h-100 w-100 object-contain large_image">
+                      </div>
+                      <div class="small_imgs flex justify-start items-start flex-row gap-3 overflow-x-scroll">
+                          <div class="border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[100px] sm:h-[100px] w-[65px] h-[65px]">
+                              <img src="./assets/images/product-d-2.jpg" alt="product" class="w-100 h-100 small_image">
+                          </div>
+                          <div class="border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[100px] sm:h-[100px] w-[65px] h-[65px]">
+                              <img src="./assets/images/product-d-3.jpg" alt="product" class="w-100 h-100 small_image">
+                          </div>
+                          <div class="border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[100px] sm:h-[100px] w-[65px] h-[65px]">
+                              <img src="./assets/images/product-d-4.jpg" alt="product" class="w-100 h-100 small_image">
+                          </div>
+                          <div class="border border-solid border-[#ebebeb] rounded-[6px] p-2 sm:w-[100px] sm:h-[100px] w-[65px] h-[65px]">
+                              <img src="./assets/images/product-d-5.jpg" alt="product" class="w-100 h-100 small_image">
+                          </div>
+                      </div>
+                      <span class="absolute top-5 right-5 bg-primary-color text-white font-medium text-[16px] py-[4px] px-[15px] rounded-[6px]"> جديد </span>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="product_details_info flex justify-start items-start flex-col sm:gap-[16px] gap-[12px] md:mt-[0px] mt-[16px]">
+                      <span class="bg-second-color text-primary-color font-medium sm:text-[16px] text-[14px] py-[4px] sm:px-[15px] px-[11px] rounded-[6px]"> التاجر </span>
+                      <span class="text-fourth-color sm:text-[14px] text-[13px] text-medium"> أجهزة و تكنولوجيا </span>
+                      <h1 class="text-third-color font-semibold text-[27px] mb-0"> موبايل أيفون 15 برو ماكس , 512GB </h1>
+                      <div class="reviews_products flex justify-start items-center flex-row gap-2">
+                          <div class="stars flex justify-start items-center flex-row gap-1">
+                              <i class="fa-solid fa-star text-primary-color text-[12px]"></i>
+                              <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                              <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                              <i class="fa-solid fa-star text-primary-color  text-[12px]"></i>
+                              <i class="fa-regular fa-star !text-third-color  text-[12px]"></i>
+                          </div>
+                          <span class="text-fourth-color sm:text-[13px] text-[12px] text-medium"> ( 32 تقييم ) </span>
+                      </div>
+                      <div class="price__prodcut flex justify-start items-center flex-row gap-3">
+                          <span class="text-primary-color font-bold sm:text-[27px] text-[22px]"> 150 ر.س </span>
+                          <span class="text-fourth-color sm:text-[15px] text-[13px] text-medium line-through"> 200 ر.س </span>
+                      </div>
+                      <p class="text-fourth-color sm:text-[15px] text-[14px] font-medium mb-0 leading-[1.8]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص  </p>
+                      <span class="text-fourth-color sm:text-[14px] text-[13px] font-medium mb-0"> SKU : HFKUHB58POLMQE </span>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal quickView -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      $('.owl-carousel.featured__categories__carousal').owlCarousel({
+      loop: true,
+      autoplay: true,
+      nav: false,
+      dots: false,
+      autoplayTimeout: 2000,
+      margin: 20,
+      responsiveClass: true,
+      ltr: true,
+      rtl: true,
+      responsive: {
+          0: {
+              items: 2,
+              nav: false
+          },
+          350: {
+              items: 2,
+              nav: false
+          },
+          600: {
+              items: 3,
+              nav: false
+          },
+          1000: {
+              items: 5,
+              nav: false,
+              loop: false
+          }
+      }
+    })
+    </script>
+    <script>
+      $('.owl-carousel.stores__carousal').owlCarousel({
+      loop: true,
+      autoplay: true,
+      nav: false,
+      dots: false,
+      autoplayTimeout: 2000,
+      margin: 20,
+      responsiveClass: true,
+      ltr: true,
+      rtl: true,
+      responsive: {
+          0: {
+              items: 2,
+              nav: false
+          },
+          350: {
+              items: 2,
+              nav: false
+          },
+          600: {
+              items: 3,
+              nav: false
+          },
+          1000: {
+              items: 6,
+              nav: false,
+              loop: false
+          }
+      }
+    })
+    </script>
+
+  </body>
+</html>
