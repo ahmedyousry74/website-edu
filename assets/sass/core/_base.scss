@@ -13,7 +13,7 @@ html{
 }
 body {
     direction: rtl;
-    background-color: $sixth-color !important;
+    background-color: #F9FAFB !important;
     overflow-x: hidden !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $second-color;
+    background-color: #008F2C;
     border-radius: 0px;
     height: 4px;
 }
@@ -208,9 +208,9 @@ input:focus::-moz-placeholder {
     transition: 0.4s;
 }
 input[type="checkbox"]:checked {
-    background-color: $second-color;
-    color: $second-color;
-    border-color: $second-color;
+    background-color: #008F2C;
+    color: #008F2C;
+    border-color: #008F2C;
 }
 /////////////////////////////////
 .title__section{
@@ -223,7 +223,7 @@ input[type="checkbox"]:checked {
     position: relative;
     font-size: 30px;
     font-weight: 600;
-    color: $second-color;
+    color: #008F2C;
     margin-bottom: 35px;
 }
 .owl-nav{
@@ -232,7 +232,7 @@ input[type="checkbox"]:checked {
     }
     span{
         font-size: 45px;
-        color: $second-color;
+        color: #008F2C;
     }
 }
 /////////////////////////
@@ -244,37 +244,37 @@ input[type="checkbox"]:checked {
             border-radius: 4px;
             width: 220px;
             height: 48px;
-            border-color: $fourth-color;
+            border-color: #DBDBDB;
             font-size: 14px;
-            color: $primary-color;
+            color: #050505;
             font-size: 14px;
-            color: $primary-color;
+            color: #050505;
             border-right: 0;
             &:focus{
                 box-shadow: none;
-                border-color: $fourth-color;
+                border-color: #DBDBDB;
             }
             option{
                 font-size: 14px;
                 margin-bottom: 10px;
-                color: $primary-color;
+                color: #050505;
             }
             &::placeholder{
                 font-size: 14px;
-                color: $primary-color;
+                color: #050505;
             }
         }
         .input-group-text{
             background-color: #fff;
         }
         label{
-            color: $primary-color;
+            color: #050505;
             font-size: 15px;
             font-weight: 500;
         }
         button,a{
-            background: $third-color;
-            border: 1px solid $third-color;
+            background: #008F2C;
+            border: 1px solid #008F2C;
             padding: 8px 25px;
             border-radius: 4px;
             display: flex;
@@ -295,7 +295,7 @@ input[type="checkbox"]:checked {
 }
 .contact__details{
     h5,a{
-        color: $primary-color;
+        color: #050505;
         font-size: 15px;
         font-weight: 500;
     }

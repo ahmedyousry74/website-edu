@@ -21,7 +21,7 @@
             gap: 12px;
             padding: 10px 0;
             h2{
-                color: $primary-color;
+                color: #050505;
                 font-size: 18px;
                 font-weight: 600;
             }
@@ -33,9 +33,9 @@
         }
         .news__footer{
             button,a{
-                background-color: $third-color;
+                background-color: #008F2C;
                 color: #fff;
-                border: 1px solid $third-color;
+                border: 1px solid #008F2C;
                 padding: 10px 15px;
                 border-radius: 6px;
             }

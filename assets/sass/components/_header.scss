@@ -27,7 +27,7 @@ header{
                 color: #fff;
                 text-align: center;
                 span{
-                  color: $third-color;
+                  color: #008F2C;
                   font-weight: 800;
                   @media(max-width: 767px){
                     margin-top: 28px;
@@ -42,15 +42,15 @@ header{
               }
             button,a{
               background-color: transparent;
-              color: $fourth-color;
-              border: 1px solid $fourth-color;
+              color: #DBDBDB;
+              border: 1px solid #DBDBDB;
               padding: 10px 25px;
               border-radius: 6px;
               transition: 0.3s all ease-in-out;
               &:hover{
-                background-color: $third-color;
+                background-color: #008F2C;
                 color: #fff;
-                border-color: $third-color;
+                border-color: #008F2C;
               }
             }
         }

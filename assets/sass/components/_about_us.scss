@@ -20,7 +20,7 @@
         z-index: 99p9;
 
         h1 {
-            color: $fourth-color;
+            color: #DBDBDB;
             font-size: 55px;
             font-weight: 600;
             opacity: 1;
@@ -32,17 +32,17 @@
             opacity: 1;
 
             li {
-                color: $fourth-color;
+                color: #DBDBDB;
             }
 
             a {
-                color: $third-color;
+                color: #008F2C;
             }
         }
     }
 
     .breadcrumb-item+.breadcrumb-item::before {
-        color: $third-color;
+        color: #008F2C;
     }
 }
 
@@ -69,20 +69,20 @@
             width: 100%;
         }
         h2 {
-            color: $third-color;
+            color: #008F2C;
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 25px
         }
 
         p {
-            color: $primary-color;
+            color: #050505;
             font-weight: 600;
             font-size: 25px;
         }
 
         h6 {
-            color: $primary-color;
+            color: #050505;
             font-weight: 600;
             font-size: 17px;
         }
@@ -129,14 +129,14 @@
         margin-top: 80px;
 
         h6 {
-            color: $third-color;
+            color: #008F2C;
             font-size: 35px;
             font-weight: 600;
             margin-bottom: 15px;
         }
 
         span {
-            color: $fourth-color;
+            color: #DBDBDB;
             font-weight: 500;
             font-size: 17px;
         }
@@ -162,7 +162,7 @@
                 padding: 5px
             }
             span {
-                color: $primary-color;
+                color: #050505;
                 font-size: 25px;
                 font-weight: 500;
             }
@@ -188,7 +188,7 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px #0000;
     position: relative;
-    background-color: $third-color !important;
+    background-color: #008F2C !important;
     color: #fff;
     transition-property: color;
     transition-duration: .3s;
@@ -250,15 +250,15 @@
             flex-direction: row !important;
         }
         button {
-            color: $primary-color;
+            color: #050505;
             font-size: 15px;
             font-weight: 500;
 
             &.active {
-                background-color: $third-color;
+                background-color: #008F2C;
                 color: #fff;
                 font-weight: 500;
-                border: 1px solid $third-color;
+                border: 1px solid #008F2C;
             }
         }
 
@@ -270,7 +270,7 @@
         border-radius: 8px;
         margin-bottom: 35px;
         h6{
-            color: $primary-color;
+            color: #050505;
             font-weight: 600;
             font-size: 15px;
         }

@@ -42,15 +42,15 @@
             }
         }
         a{
-            border: 1px solid $fourth-color;
+            border: 1px solid #DBDBDB;
             border-radius: 4px;
             color: #fff;
             padding: 12px 30px;
             transition: 0.3s ease-in-out all;
             &:hover{
-                background-color: $third-color;
+                background-color: #008F2C;
                 color: #fff;
-                border-color: $third-color;
+                border-color: #008F2C;
             }
         }
     }

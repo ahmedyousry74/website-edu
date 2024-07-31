@@ -25,7 +25,7 @@
             font-weight: 600px;
             margin-bottom: 35px;
             span{
-                color: $third-color;
+                color: #008F2C;
                 font-weight: 800;
             }
         }
@@ -61,7 +61,7 @@
             width: 100%;
         }
         .contact_header{
-            background-color: $second-color;
+            background-color: #008F2C;
             padding: 8px 15px;
             height: 100px;
             text-align: center;
@@ -91,15 +91,15 @@
                 margin-top: 35px;
                 button{
                     background-color: transparent;
-                    color: $primary-color;
-                    border: 1px solid $fourth-color;
+                    color: #050505;
+                    border: 1px solid #DBDBDB;
                     padding: 10px 25px;
                     transition: 0.3s all ease-in-out;
                     border-radius: 6px;
                     &:hover{
-                        background-color: $third-color;
+                        background-color: #008F2C;
                         color: #fff;
-                        border-color: $third-color;
+                        border-color: #008F2C;
                     }
                 }
             }
@@ -118,7 +118,7 @@
                 font-size: 25px;
                 margin-bottom: 20px;
                 span{
-                    color: $third-color;
+                    color: #008F2C;
                     font-weight: 800;
                 }
             }

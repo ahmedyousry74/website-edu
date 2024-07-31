@@ -1,7 +1,7 @@
 .offers{
     padding: 50px 0 20px 0;
     .offer_item{
-        border: 1px solid $fourth-color;
+        border: 1px solid #DBDBDB;
         border-radius: 8px;
         .img_offer{
             height: 200px;
@@ -23,7 +23,7 @@
             gap: 12px;
             padding: 20px 12px;
             h2{
-                color: $primary-color;
+                color: #050505;
                 font-size: 18px;
                 font-weight: 600;
             }
@@ -35,14 +35,14 @@
             button{
                 transition: 0.5s all ease-in-out;
                 background-color: transparent;
-                color: $primary-color;
-                border: 1px solid $fourth-color;
+                color: #050505;
+                border: 1px solid #DBDBDB;
                 padding: 10px 25px;
                 border-radius: 6px;
                 &:hover{
-                    background-color: $third-color;
+                    background-color: #008F2C;
                     color: #fff;
-                    border: 1px solid $third-color;
+                    border: 1px solid #008F2C;
                 }
             }
         }
