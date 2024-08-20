@@ -840,17 +840,17 @@ input[type=checkbox]:checked {
   width: 100%;
 }
 .website .page__header .page__info {
-  z-index: 99p9;
+  z-index: 9;
 }
 .website .page__header .page__info h1 {
   color: #DBDBDB;
   font-size: 55px;
   font-weight: 600;
   opacity: 1;
-  z-index: 999;
+  z-index: 9;
 }
 .website .page__header .page__info .breadcrumb {
-  z-index: 999;
+  z-index: 9;
   opacity: 1;
 }
 .website .page__header .page__info .breadcrumb li {
@@ -1163,7 +1163,7 @@ input[type=checkbox]:checked {
 }
 .website .contact .contact_right {
   z-index: 99999;
-  padding: 120px 0 0;
+  padding: 140px 0 0;
   position: relative;
 }
 .website .contact .contact_right h2 {
@@ -1432,7 +1432,7 @@ input[type=checkbox]:checked {
   transform: translate(50%, 50%);
   top: 35%;
   right: 50%;
-  z-index: 9999;
+  z-index: 9;
 }
 .website header .carousel-item .header_title h2 {
   font-size: 45px;
@@ -1627,7 +1627,7 @@ input[type=checkbox]:checked {
   right: 0;
   background-color: transparent;
   width: 100%;
-  z-index: 999999;
+  z-index: 99;
 }
 .website nav .colse_ {
   filter: invert(1);
@@ -2043,6 +2043,27 @@ input[type=checkbox]:checked {
 .website .owl-nav span {
   font-size: 45px;
   color: #008F2C;
+}
+
+html[dir=ltr] .website, html[lang=en] .website {
+  direction: ltr;
+}
+html[dir=ltr] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, html[dir=ltr] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, html[dir=ltr] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating), html[lang=en] .website .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, html[lang=en] .website .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, html[lang=en] .website .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+html[dir=ltr] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback), html[lang=en] .website .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right: 1px solid #DBDBDB;
+}
+html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en] .website .breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  margin: 0 5px;
 }
 
 .store nav, .store .sec__navbar {
