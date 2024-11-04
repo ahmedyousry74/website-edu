@@ -857,3 +857,13 @@ body.store[dir='ltr'] {
     width: 70%;
   }
 }
+
+body.website[dir='ltr'] {
+  direction: ltr !important;
+  .contact__us__page form input, .contact__us__page form select, .contact__us__page form textarea{
+    border-radius:  0 4px 4px 0 !important;
+  }
+  .contact__us__page form .input-group-text{
+    border-radius: 4px 0 0 4px !important;
+  }
+}

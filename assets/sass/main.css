@@ -769,6 +769,16 @@ body.store[dir=ltr] .filter-sidebar .accordion-button::after {
   width: 70%;
 }
 
+body.website[dir=ltr] {
+  direction: ltr !important;
+}
+body.website[dir=ltr] .contact__us__page form input, body.website[dir=ltr] .contact__us__page form select, body.website[dir=ltr] .contact__us__page form textarea {
+  border-radius: 0 4px 4px 0 !important;
+}
+body.website[dir=ltr] .contact__us__page form .input-group-text {
+  border-radius: 4px 0 0 4px !important;
+}
+
 .website .contact__us__page {
   padding: 50px 0;
 }
