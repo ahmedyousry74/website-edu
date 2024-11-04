@@ -304,14 +304,16 @@ input[type=checkbox]:checked {
   width: 100px;
 }
 
-.contact_us_page input, .contact_us_page textarea {
+.contact_us_page input,
+.contact_us_page textarea {
   height: 48px;
   font-size: 13px !important;
 }
 .contact_us_page input::-moz-placeholder, .contact_us_page textarea::-moz-placeholder {
   font-size: 13px !important;
 }
-.contact_us_page input::placeholder, .contact_us_page textarea::placeholder {
+.contact_us_page input::placeholder,
+.contact_us_page textarea::placeholder {
   font-size: 13px !important;
 }
 .contact_us_page textarea {
@@ -345,14 +347,16 @@ input[type=checkbox]:checked {
     font-size: 15px;
   }
 }
-.product__details__layout .reviews_items input, .product__details__layout .reviews_items textarea {
+.product__details__layout .reviews_items input,
+.product__details__layout .reviews_items textarea {
   height: 48px;
   font-size: 13px !important;
 }
 .product__details__layout .reviews_items input::-moz-placeholder, .product__details__layout .reviews_items textarea::-moz-placeholder {
   font-size: 13px !important;
 }
-.product__details__layout .reviews_items input::placeholder, .product__details__layout .reviews_items textarea::placeholder {
+.product__details__layout .reviews_items input::placeholder,
+.product__details__layout .reviews_items textarea::placeholder {
   font-size: 13px !important;
 }
 .product__details__layout .reviews_items textarea {
@@ -511,11 +515,13 @@ input[type=checkbox]:checked {
   font-weight: 400;
 }
 
-.store_item, .store__banner {
+.store_item,
+.store__banner {
   flex-wrap: nowrap;
 }
 @media (max-width: 767px) {
-  .store_item, .store__banner {
+  .store_item,
+  .store__banner {
     flex-wrap: wrap;
   }
 }
@@ -704,7 +710,8 @@ input[type=checkbox]:checked {
   border-color: #3BB77E !important;
 }
 
-.categories__items__list, .categories_item {
+.categories__items__list,
+.categories_item {
   border: 1px solid #3BB77E !important;
 }
 
@@ -725,7 +732,8 @@ input[type=checkbox]:checked {
   color: #fff;
   border-color: #3BB77E !important;
 }
-.profile__layout .nav button.active svg, .profile__layout .nav button.active path {
+.profile__layout .nav button.active svg,
+.profile__layout .nav button.active path {
   color: #fff !important;
   fill: #fff !important;
 }
@@ -742,6 +750,23 @@ input[type=checkbox]:checked {
   outline: 0 !important;
   box-shadow: none !important;
   border-color: #ccc !important;
+}
+
+body.store[dir=ltr] {
+  direction: ltr !important;
+}
+body.store[dir=ltr] .form__search button {
+  right: 12px !important;
+  left: auto !important;
+}
+body.store[dir=ltr] .categories__items__list {
+  left: 35px !important;
+  right: auto !important;
+}
+body.store[dir=ltr] .filter-sidebar .accordion-button::after {
+  position: relative;
+  right: 0;
+  width: 70%;
 }
 
 .website .contact__us__page {
