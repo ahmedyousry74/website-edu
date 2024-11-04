@@ -71,3 +71,68 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+document.querySelector('.formFileOne').addEventListener('change', function (event) {
+    const previewContainer = document.getElementById('previewContainerOne');
+    previewContainer.innerHTML = '';
+
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.style.maxWidth = '100%';
+            img.style.maxHeight = '150px';
+            img.alt = 'Uploaded Preview';
+            previewContainer.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+    }
+});
+document.querySelector('.formFileTwo').addEventListener('change', function (event) {
+    const previewContainer = document.getElementById('previewContainerTwo');
+    previewContainer.innerHTML = '';
+
+    const file = event.target.files[0];
+    if (file) {
+        const fileType = file.type;
+        const reader = new FileReader();
+
+        if (fileType.startsWith('image/')) {
+
+            reader.onload = function (e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '150px';
+                img.alt = 'Uploaded Preview';
+
+                previewContainer.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        } else if (fileType === 'application/pdf') {
+            const pdfIcon = document.createElement('img');
+            pdfIcon.src = '../../assets/images-store/pdf.jpg';
+            pdfIcon.alt = 'PDF Preview';
+            pdfIcon.style.width = '100px';
+            pdfIcon.style.height = '100px';
+            pdfIcon.style.marginBottom = '10px';
+
+            const pdfLink = document.createElement('a');
+            reader.onload = function (e) {
+                pdfLink.href = e.target.result;
+                pdfLink.textContent = 'View PDF';
+                pdfLink.target = '_blank';
+                pdfLink.style.display = 'block';
+
+                previewContainer.appendChild(pdfIcon);
+            };
+            reader.readAsDataURL(file);
+        } else {
+            alert('Unsupported file type. Please upload an image or PDF.');
+        }
+    }
+});

@@ -119,12 +119,7 @@ video {
   font-size: 100%;
   font: inherit;
   scroll-behavior: auto !important;
-  text-transform: capitalize;
   font-family: "Almarai", sans-serif;
-}
-
-* {
-  text-transform: capitalize;
 }
 
 thead {
@@ -2138,6 +2133,7 @@ html[dir=ltr] .website .breadcrumb-item + .breadcrumb-item::before, html[lang=en
   color: #253D4E;
   font-size: 16px;
   font-weight: 500;
+  width: auto !important;
 }
 @media (max-width: 991px) {
   .store nav, .store .sec__navbar {
