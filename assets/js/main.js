@@ -92,23 +92,26 @@ document.querySelector('.formFileOne').addEventListener('change', function (even
         reader.readAsDataURL(file);
     }
 });
-document.querySelector('.formFileTwo').addEventListener('change', function (event) {
+
+
+document.querySelector('.formFileTwo').addEventListener('change', function(event) {
     const previewContainer = document.getElementById('previewContainerTwo');
     previewContainer.innerHTML = '';
 
-    const file = event.target.files[0];
-    if (file) {
+    const files = event.target.files;
+
+    Array.from(files).forEach((file) => {
         const fileType = file.type;
         const reader = new FileReader();
 
         if (fileType.startsWith('image/')) {
-
-            reader.onload = function (e) {
+            reader.onload = function(e) {
                 const img = document.createElement('img');
                 img.src = e.target.result;
                 img.style.maxWidth = '100%';
                 img.style.maxHeight = '150px';
                 img.alt = 'Uploaded Preview';
+                img.style.margin = '5px';
 
                 previewContainer.appendChild(img);
             };
@@ -120,9 +123,10 @@ document.querySelector('.formFileTwo').addEventListener('change', function (even
             pdfIcon.style.width = '100px';
             pdfIcon.style.height = '100px';
             pdfIcon.style.marginBottom = '10px';
+            pdfIcon.style.margin = '5px';
 
             const pdfLink = document.createElement('a');
-            reader.onload = function (e) {
+            reader.onload = function(e) {
                 pdfLink.href = e.target.result;
                 pdfLink.textContent = 'View PDF';
                 pdfLink.target = '_blank';
@@ -134,5 +138,5 @@ document.querySelector('.formFileTwo').addEventListener('change', function (even
         } else {
             alert('Unsupported file type. Please upload an image or PDF.');
         }
-    }
+    });
 });
